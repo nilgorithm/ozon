@@ -20,7 +20,7 @@ func main() {
 		}
 		for i := 1; i < tsh+1; i++ {
 			_, exists := sum[i]
-			if exists && sum[i] == i + (tsh-(1+(i-1)*2)) {
+			if exists && sum[i] == tsh-(i-1)*1 {
 				if i==tsh {
 					fmt.Println("Yes")
 				}
