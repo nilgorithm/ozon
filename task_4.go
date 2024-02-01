@@ -5,7 +5,7 @@ import (
 	"os"
 	"bufio"
 )
-
+//решение через смещение диапозона минимума и максимума
 func main() {
 	out := bufio.NewWriter(os.Stdout)
 	defer out.Flush()
@@ -20,7 +20,6 @@ func main() {
 		for j := 0; j < persns; j++ {
 			var symb string
 			var dig int
-			//fmt.Fscanf(in, "%s %d", &symb, &dig)
 			fmt.Fscan(in, &symb, &dig)
 			if optimal {
 				if min <= dig && dig <= max {

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 )
-
+//задача сводится к примитиву использования всех конечных дат месяцев
 func isValidDate(day, month, year int) string {
 	daysInMonth := []int{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
 

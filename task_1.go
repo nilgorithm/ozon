@@ -1,11 +1,12 @@
 package main
 
 import (
-  "os"
-  "fmt"
-  "bufio"
+	"bufio"
+	"fmt"
+	"os"
 )
 
+// решение регрессией
 func main() {
 	r := bufio.NewReader(os.Stdin)
 	var its int //количество итераций
@@ -20,13 +21,13 @@ func main() {
 		}
 		for i := 1; i < tsh+1; i++ {
 			_, exists := sum[i]
-			if exists && sum[i] == tsh-(i-1)*1 {
-				if i==tsh {
-					fmt.Println("Yes")
+			if exists && sum[i] == tsh-i+1 {
+				if i == tsh {
+					fmt.Printf("YES")
 				}
 				continue
 			} else {
-				fmt.Println("No")
+				fmt.Printf("NO")
 				break
 			}
 		}

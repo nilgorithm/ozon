@@ -6,7 +6,7 @@ import (
 	"bufio"
 	"os"
 )
-
+//решение регуляркой с расширенной версией библиотеки regexp поддерживающей positive lookahead assertion
 func main() {
 	var its int
 	fmt.Scan(&its)

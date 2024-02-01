@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 )
-
+//решение регуляркой
 func splitIntoPlates(s string) (string, bool) {
 	plateRegex := regexp.MustCompile(`[A-Z][\d]{1,2}[A-Z]{2}`)
 	matches := plateRegex.FindAllString(s, -1)
