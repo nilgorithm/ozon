@@ -23,11 +23,11 @@ func main() {
 			_, exists := sum[i]
 			if exists && sum[i] == tsh-i+1 {
 				if i == tsh {
-					fmt.Printf("YES")
+					fmt.Println("YES")
 				}
 				continue
 			} else {
-				fmt.Printf("NO")
+				fmt.Println("NO")
 				break
 			}
 		}

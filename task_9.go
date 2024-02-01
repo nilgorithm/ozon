@@ -59,7 +59,7 @@ func main() {
 			if indexes := getIndexes(cs); indexes != nil {
 				if len(m) > 0 {
 					indexes = findPairs(indexes, &m, &res)
-					fmt.Println(m, indexes)
+					//fmt.Println(m, indexes)
 					for _, rpair := range indexes {
 						lstatus := 0
 						for _, arr := range m {
@@ -78,12 +78,19 @@ func main() {
 			}
 
 		}
+
 		sort.Ints(res)
 		stringSlice := make([]string, len(res))
 		for i, num := range res {
 			stringSlice[i] = strconv.Itoa(num)
 		}
 		resultString := strings.Join(stringSlice, " ")
+
 		fmt.Println(resultString)
+		//	if g < its-1 {
+		//		fmt.Println(resultString)
+		//	} else {
+		//		fmt.Print(resultString)
+		//	}
 	}
 }
