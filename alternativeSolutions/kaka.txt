@@ -1,0 +1,8 @@
+inputFile, err := os.Open(testCasesFilepath)
+rightAnswers, err := os.ReadFile(filepath.Join(test_dir, strconv.Itoa(i)+".a"))
+var output bytes.Buffer
+run(inputFile, &output)
+if bytes.Compare(output.Bytes(), rightAnswers) != 0 {
+  bytes.Compare(output.Bytes(), rightAnswers)
+  t.Errorf("got:\n%s\nbut expected:\n%s", output.String(), string(rightAnswers))
+}
